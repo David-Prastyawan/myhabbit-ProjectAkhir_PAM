@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/latar"
+    tools:context=".HalamanHitung">
+
+
+    <Button
+        android:id="@+id/btnReset"
+        android:layout_width="116dp"
+        android:layout_height="50dp"
+        android:text="reset"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nextartbold"
+        android:background="@drawable/button_wirid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnTambah"
+        app:layout_constraintVertical_bias="0.494"
+        />
+
+    <TextView
+        android:id="@+id/perberapa"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginStart="98dp"
+        android:layout_marginTop="76dp"
+        android:fontFamily="@font/nextartbold"
+        android:gravity="center"
+        android:text="33"
+        android:textColor="@color/black"
+        android:textSize="90dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.627"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/per"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:fontFamily="@font/nextartbold"
+        android:gravity="center"
+        android:text="/"
+        android:textColor="@color/black"
+        android:textSize="75dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/perberapa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.463"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:fontFamily="@font/nextartbold"
+        android:gravity="center"
+        android:text="0"
+        android:textColor="@color/black"
+        android:textSize="90dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/per"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.256"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnTambah"
+        android:layout_width="142dp"
+        android:layout_height="157dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="47dp"
+        android:text="+"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nextartbold"
+        android:background="@drawable/button_wirid"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/btnKurang"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42" />
+
+    <Button
+        android:id="@+id/btnUbah"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_wirid"
+        android:text="ubah"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nextartbold"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnReset"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.293"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnKurang"
+        android:layout_width="142dp"
+        android:layout_height="157dp"
+        android:layout_marginEnd="47dp"
+        android:text="-"
+        android:textSize="50dp"
+        android:textColor="@color/black"
+        android:fontFamily="@font/nextartbold"
+        android:background="@drawable/button_wirid"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnTambah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.268"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
